@@ -39,73 +39,7 @@
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
-/* Base styling for feature boxes */
-.feature-box {
-  position: relative;
-  padding: 10px 20px;
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
-}
 
-.feature-box h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0 0 5px;
-}
-
-.feature-box p {
-  font-size: 14px;
-  margin: 0;
-  color: #555;
-}
-
-/* Connector line */
-.connector {
-  position: absolute;
-  width: 3px;
-  height: 100%;
-  background: #007bff;
-  top: 50%;
-  left: calc(50% - 1.5px);
-  transform: translateY(-50%);
-  z-index: -1;
-}
-
-.col-md-6:not(:last-child) .connector {
-  height: calc(100% + 30px); /* Extend connector to next feature */
-}
-
-/* Hover effect */
-.feature-box:hover {
-  background: #007bff;
-  color: #fff;
-}
-
-.feature-box:hover h3,
-.feature-box:hover p,
-.feature-box:hover i {
-  color: #fff;
-}
-
-/* Align text next to icons */
-.feature-box i {
-  font-size: 24px;
-  margin-right: 10px;
-  color: #007bff;
-  transition: color 0.3s;
-}
-
-.feature-box:hover i {
-  color: #fff;
-}
-
-/* Spacing between features */
-.row .col-md-6 {
-  margin-bottom: 30px;
-}
 
 
 
