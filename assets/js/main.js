@@ -48,7 +48,7 @@
 
   });
 
-const words = ["Style", "Value", "Reach", "Vision", "Impact", "Story"]; //Style, Vision, Reach, Value, Focus
+const words = ["Style", "Value", "Reach", "Vision", "Story"]; //Style, Vision, Reach, Value, Focus
 let wordIndex = 0;
 let charIndex = 0;
 const animatedText = document.getElementById("animated-text");
