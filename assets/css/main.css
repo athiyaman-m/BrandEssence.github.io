@@ -974,6 +974,22 @@ section,
   }
 }
 
+.custom-list {
+  list-style-type: none; /* Removes the default bullet points */
+  padding: 0; /* Optional: Removes padding from the list */
+  margin: 0; /* Optional: Removes margin from the list */
+}
+
+.custom-list li {
+  display: flex; /* Ensures alignment between the icon and text */
+  align-items: center; /* Centers the icon vertically with the text */
+}
+
+.custom-list i {
+  margin-right: 10px; /* Adds spacing between the icon and the text */
+}
+
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
