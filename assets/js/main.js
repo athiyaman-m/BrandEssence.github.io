@@ -53,6 +53,53 @@ let wordIndex = 0;
 let charIndex = 0;
 const animatedText = document.getElementById("animated-text");
 
+  // Function to append "+" symbol when the counter finishes
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        const target = mutation.target;
+        if (mutation.type === "childList" && target.id === "happyClientsCounter") {
+          if (!target.textContent.includes("+")) {
+            target.textContent += "+";
+          }
+        }
+      });
+    });
+
+    const counterElement = document.getElementById("happyClientsCounter");
+    observer.observe(counterElement, { childList: true });
+  });
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        const target = mutation.target;
+        if (mutation.type === "childList" && target.id === "projectsCounter") {
+          if (!target.textContent.includes("+")) {
+            target.textContent += "+";
+          }
+        }
+      });
+    });
+
+    const counterElement = document.getElementById("projectsCounter");
+    observer.observe(counterElement, { childList: true });
+  });
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        const target = mutation.target;
+        if (mutation.type === "childList" && target.id === "experienceCounter") {
+          if (!target.textContent.includes("+")) {
+            target.textContent += "+";
+          }
+        }
+      });
+    });
+
+    const counterElement = document.getElementById("experienceCounter");
+    observer.observe(counterElement, { childList: true });
+  });
+
 function typeWord() {
     const currentWord = words[wordIndex];
     if (charIndex < currentWord.length) {
