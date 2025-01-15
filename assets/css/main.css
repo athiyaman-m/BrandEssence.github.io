@@ -768,6 +768,9 @@ h6 {
 /*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
+
+/* Ensure the background of the section is black and the text is white */
+
 .page-title {
   color: var(--default-color);
   background-color: var(--background-color);
