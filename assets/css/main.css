@@ -1812,11 +1812,13 @@ section,
 --------------------------------------------------------------*/
 .clients .swiper-slide img {
   transition: 0.3s;
-  opacity: 0.5;
+  opacity: 1 !important;
+  filter: none !important;
 }
 
 .clients .swiper-slide img:hover {
-  opacity: 1;
+  opacity: 1 !important;
+  filter: none !important;
 }
 
 .clients .swiper-wrapper {
