@@ -397,8 +397,6 @@
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/logo-1.png" class="img-fluid" alt="">
@@ -832,35 +830,31 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
 
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
+            <form action="https://api.web3forms.com/submit" method="POST" class="styled-form">
+              <input type="hidden" name="access_key" value="70f95146-2ca6-4f19-8ad4-821f4d6c005c">
+            
+              <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
               </div>
-              
-            </form>
+            
+              <div class="form-group">
+                <input type="tel" name="phone" placeholder="Your Phone Number" required>
+              </div>
+            
+              <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email Address" required>
+              </div>
+            
+              <div class="form-group">
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+              </div>
+            
+              <div class="form-group">
+                <button type="submit" class="submit-btn">Submit Form</button>
+              </div>
+          </form>
+          
           </div><!-- End Contact Form -->
 
         </div>

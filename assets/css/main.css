@@ -211,6 +211,7 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
+
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -2855,4 +2856,72 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+
+
+.styled-form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.styled-form .form-group {
+  margin-bottom: 15px;
+}
+
+.styled-form input,
+.styled-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.styled-form input::placeholder,
+.styled-form textarea::placeholder {
+  color: #aaa;
+}
+
+.styled-form textarea {
+  resize: vertical;
+}
+
+.styled-form .submit-btn {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.styled-form .submit-btn:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .styled-form {
+    padding: 15px;
+  }
+
+  .styled-form input,
+  .styled-form textarea {
+    font-size: 14px;
+  }
+
+  .styled-form .submit-btn {
+    font-size: 14px;
+  }
 }
