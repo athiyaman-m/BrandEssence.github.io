@@ -284,4 +284,27 @@ typeWord(); // Start the animation
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  // Select all videos with the class "auto-play-video"
+  const videos = document.querySelectorAll('.auto-play-video');
+
+  // Create an IntersectionObserver to observe when videos are in the viewport
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const video = entry.target;
+
+      if (entry.isIntersecting) {
+        // Play the video when it enters the viewport
+        video.play();
+      } else {
+        // Pause the video when it leaves the viewport
+        video.pause();
+      }
+    });
+  }, { threshold: 0.5 }); // Adjust threshold to control when the video starts playing (50% visibility)
+
+  // Observe each video
+  videos.forEach(video => {
+    observer.observe(video);
+  });
+
 })();
