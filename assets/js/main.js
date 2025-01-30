@@ -115,7 +115,7 @@ function eraseWord() {
     }
 }
 
-    document.getElementById("contact-form").addEventListener("submit", function(event) {
+document.getElementById("contact-form").addEventListener("submit", function(event) {
       event.preventDefault();
       let formData = new FormData(this);
       
@@ -125,7 +125,7 @@ function eraseWord() {
       }).then(response => response.json())
         .then(data => alert("Message Sent!"))
         .catch(error => alert("Error sending message."));
-    });
+});
 
 typeWord(); // Start the animation
 
