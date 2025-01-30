@@ -115,18 +115,6 @@ function eraseWord() {
     }
 }
 
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-      event.preventDefault();
-      let formData = new FormData(this);
-      
-      fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData,
-      }).then(response => response.json())
-        .then(data => alert("Message Sent!"))
-        .catch(error => alert("Error sending message."));
-});
-
 typeWord(); // Start the animation
 
   /**
